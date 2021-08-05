@@ -1,0 +1,6 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t kngell/kngell_docker1 -f Dockerfile.dev .
